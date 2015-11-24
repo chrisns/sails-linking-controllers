@@ -1,0 +1,52 @@
+{
+  "name": "sails-linking-controllers",
+  "version": "1.0.0",
+  "description": "Linking controllers",
+  "keywords": [
+    "reversible",
+    "sails"
+  ],
+  "author": [
+    {
+      "name": "Chris Nesbitt-Smith",
+      "email": "chris@cns.me.uk"
+    },
+    {
+      "name": "Oystein Nilsen",
+      "email": "oysteinnil@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisns/sails-linking-controllers.git"
+  },
+  "bugs": {
+    "url": "http://github.com/chrisns/sails-linking-controllers/issues"
+  },
+  "license": "GPL-2.0",
+  "sails": {
+    "isHook": true
+  },
+  "main": "./lib",
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "sails-util": "^0.10.6"
+  },
+  "devDependencies": {
+    "chai": "1.x.x",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.4.0",
+    "mocha": "^1.21.5",
+    "mocha-lcov-reporter": "^1.0.0",
+    "rewire": "^2.4.0",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul cover _mocha",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+  }
+}
