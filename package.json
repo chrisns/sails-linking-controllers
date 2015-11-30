@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Linking controllers",
   "keywords": [
-    "reversible",
+    "hateoas",
     "sails"
   ],
   "author": [
@@ -30,6 +30,7 @@
   "main": "./lib",
   "dependencies": {
     "lodash": "^3.10.1",
+    "bluebird": "^3.0.2",
     "sails-util": "^0.10.6"
   },
   "devDependencies": {
