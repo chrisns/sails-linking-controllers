@@ -31,7 +31,8 @@
   "dependencies": {
     "lodash": "^3.10.1",
     "bluebird": "^3.0.2",
-    "sails-util": "^0.10.6"
+    "sails-util": "^0.10.6",
+    "sails-reverse-routing": "^1.0.12"
   },
   "devDependencies": {
     "chai": "1.x.x",

@@ -69,9 +69,6 @@ describe('UNIT sails-linking-controllers', () => {
       res = {};
     });
 
-    beforeEach(() => {
-    });
-
     after(() => {
       lib.__set__('matchPaths', originalMatchPaths);
     });
@@ -82,7 +79,7 @@ describe('UNIT sails-linking-controllers', () => {
         controllerLinksHook.routes.after['*'](req, res, next);
       });
 
-      it('shuold return pageLinks at [path].', () => {
+      it('should return pageLinks at [path].', () => {
         expect(res.pageLinks).to.eql([{rel: 'rel', link: 'link'}]);
         expect(matchPathsMock).to.have.callCount(0);
         expect(next).to.have.been.called;

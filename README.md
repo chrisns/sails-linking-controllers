@@ -13,11 +13,11 @@ Ability to generate hateoas-compatible links to actions (list/create) on control
 ## Install
 
 ```bash
-$ npm install sails-linking-cotronllers
+$ npm install sails-linking-controllers
 ```
 
 ## Usage
-Add a links array to your controller's _config object, like so (in yourController.js)
+Add a links array to your controller's _config object, like so (in yourController.js):
 ```js
     module.exports = {
       ...
