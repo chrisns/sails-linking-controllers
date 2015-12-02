@@ -75,7 +75,7 @@ describe('UNIT sails-linking-controllers', () => {
 
     describe('where path has no args...', () => {
       before(() => {
-        req = {originalUrl: 'path/to/something'};
+        req = {url: 'path/to/something'};
         controllerLinksHook.routes.after['*'](req, res, next);
       });
 
@@ -88,7 +88,7 @@ describe('UNIT sails-linking-controllers', () => {
 
     describe('where path has an arg...', () => {
       before(() => {
-        req = {originalUrl: 'path/to/42'};
+        req = {url: 'path/to/42'};
         controllerLinksHook.routes.after['*'](req, res, next);
       });
 
@@ -102,7 +102,7 @@ describe('UNIT sails-linking-controllers', () => {
 
     describe('where pageLinks[path] is undefined...', () => {
       before(() => {
-        req = {originalUrl: 'does/not/exist'};
+        req = {url: 'does/not/exist'};
         matchPathsMock = sinon.stub().returns('something');
         lib.__set__('matchPaths', matchPathsMock);
         controllerLinksHook.routes.after['*'](req, res, next);
