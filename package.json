@@ -23,7 +23,7 @@
   "bugs": {
     "url": "http://github.com/chrisns/sails-linking-controllers/issues"
   },
-  "license": "GPL-2.0",
+  "license": "MIT",
   "sails": {
     "isHook": true
   },
