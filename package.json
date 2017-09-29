@@ -29,19 +29,19 @@
   },
   "main": "./lib",
   "dependencies": {
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.4",
     "bluebird": "^3.0.2",
-    "sails-util": "^0.10.6",
+    "sails-util": "^0.11.0",
     "sails-reverse-routing": "^1.0.12"
   },
   "devDependencies": {
-    "chai": "1.x.x",
-    "coveralls": "^2.11.4",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
     "istanbul": "^0.4.0",
-    "mocha": "^1.21.5",
+    "mocha": "^3.5.3",
     "mocha-lcov-reporter": "^1.0.0",
     "rewire": "^2.4.0",
-    "sinon": "^1.17.2",
+    "sinon": "^4.0.0",
     "sinon-chai": "^2.8.0"
   },
   "engines": {
